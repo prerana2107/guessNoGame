@@ -1,0 +1,110 @@
+/* @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Hanalei+Fill&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Hanalei+Fill&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Hanalei+Fill&family=IM+Fell+DW+Pica+SC&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Hanalei+Fill&family=IM+Fell+DW+Pica+SC&family=Luckiest+Guy&family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Righteous", cursive;
+  color: #eee;
+  background: #bfbfbf;
+}
+
+.main {
+  background-color: #222;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 94%);
+  width: 50%;
+  text-align: center;
+  height: 600px;
+  margin: 40px auto;
+  padding: 3%;
+}
+
+.next {
+  margin-top: 75px;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-family: "IM Fell DW Pica SC", serif;
+  /* font-size: 4rem; */
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.number-box {
+  background: white;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.between {
+  font-size: 16px;
+  margin-top: 25px;
+}
+.right {
+  text-align: justify;
+  font-size: 22px;
+}
+.number {
+  font-family: "Bungee Shade", cursive;
+  color: black;
+  font-size: 60px;
+}
+
+.guess {
+  background: #222323;
+  border: 2px solid #bfbfbf;
+  text-align: center;
+  width: 35%;
+  font-size: 30px;
+  height: 70px;
+}
+.btns {
+  margin-top: 30px;
+  color: black;
+}
+
+#checkbtn {
+  font-family: "IM Fell DW Pica SC", serif;
+  width: 50%;
+  border-radius: 0;
+  height: 50px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+#againbtn {
+  font-family: "IM Fell DW Pica SC", serif;
+  width: 50%;
+  border-radius: 0;
+  height: 50px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.label-score {
+  margin-top: 30px;
+}
+.label-highscore {
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) and (min-width: 200px) {
+  .main {
+    width: 80%;
+    height: 750px;
+  }
+  .next {
+    margin-top: 42px;
+  }
+  .right {
+    margin-top: 30px;
+    padding-left: 35px;
+  }
+}
