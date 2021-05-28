@@ -18,7 +18,9 @@ document.getElementById('againbtn').style.display="none";
 let score = 20; //set score value by default 20
 let highscore = 0; //set highscore by default 0
 const displayMsg = function(message){
+    document.querySelector(".message").style.color="#ffc800";
     document.querySelector(".message").textContent = message;
+
 }
 
 //....logic on check btn.....
@@ -32,7 +34,8 @@ document.querySelector(".check").addEventListener('click',function(){
     }
     else if(guess === secretNumber){ //when player wins
         //document.querySelector(".message").textContent = "🏆 Correct Number";
-        displayMsg("🏆 Correct Number");
+        displayMsg("🏆 Correct Number!");
+        document.querySelector(".message").style.color="rgb(96 179 71)";
         document.getElementById('againbtn').style.display="block";
         document.getElementById('checkbtn').style.display="none";
 
@@ -48,7 +51,7 @@ document.querySelector(".check").addEventListener('click',function(){
     else if (guess !== secretNumber){//(REFACTORING)When guess is wrong
         if(score>1){
                     //document.querySelector(".message").textContent = guess > secretNumber ? "📉 Too High" : "📈 Too Low";
-                    displayMsg(guess > secretNumber ? "📉 Too High" : "📈 Too Low");
+                    displayMsg(guess > secretNumber ? "📉 Too High!" : "📈 Too Low!");
                     score--;
                     document.querySelector(".score").textContent=score;
                 }
@@ -87,7 +90,8 @@ document.querySelector(".again").addEventListener('click',function(){
     score = 20;
     secretNumber = Math.trunc(Math.random()*20)+1;
     //document.querySelector(".message").textContent = "Start guessing...";
-    displayMsg("Start guessing...");
+    displayMsg("🤔 Start guessing...");
+    document.querySelector(".message").style.color="#fff";
     document.querySelector(".score").textContent=score;
     document.querySelector(".number").textContent = "?";
     document.querySelector("body").style.backgroundColor="#bfbfbf";
